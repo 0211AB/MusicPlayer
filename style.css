@@ -20,8 +20,8 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     background:linear-gradient(deeppink, purple);
-    background: url('images/44zG.gif') repeat-x fixed center;
-    background-size: contain;
+   /*    background: url('images/44zG.gif') repeat-x fixed center;
+    background-size: contain;*/
     transition: all 0.01s cubic-bezier(0.075, 0.82, 0.165, 1);
     padding:5.5rem;
 }
@@ -86,13 +86,13 @@ header .user img{
     box-shadow: 0 0 0 1rem rgba(255,255,255,.2);
 }
 
-header .user .name{
+header .user #name{
     font-size: 3rem;
     color:#fff;
     padding:.5rem 0;
 }
 
-header .user .post{
+header .user #post{
     font-size: 1.8rem;
     color:#eee;
     font-weight: lighter;
@@ -200,7 +200,7 @@ header .user .post{
     color:#fff;
 }
 
-.about .skills .songname:hover{
+.about .skills .songname:hover,.about .skills .songname.active{
     background:rgba(255,255,255,.5);
     color:#555;
 }
